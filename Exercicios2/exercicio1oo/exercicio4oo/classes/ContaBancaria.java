@@ -5,6 +5,14 @@ public class ContaBancaria {
     private String titular;
     private double saldo;
 
+    public void sacar(double valor) {
+        this.saldo = this.saldo - valor;
+    }
+
+    public void depositar(double valor) {
+        this.saldo = this.saldo + valor;
+    }
+
     public String getNumeroConta() {
         return numeroConta;
     }
@@ -27,5 +35,9 @@ public class ContaBancaria {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public void imprimirSaldoAtual() {
+        System.out.printf("\n%.2f", this.saldo);
     }
 }

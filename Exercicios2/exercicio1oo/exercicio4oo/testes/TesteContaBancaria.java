@@ -10,8 +10,11 @@ public class TesteContaBancaria {
         ContaB.setTitular("Eduardo Mateus");
 
         System.out.printf("\n--- Dados da Conta Bancária ---");
-        System.out.printf("Número da Conta: " + ContaB.getNumeroConta());
-        System.out.printf("Titular: " + ContaB.getTitular());
-        System.out.printf("Saldo: R$ " + ContaB.getSaldo());
+        System.out.printf("\nNúmero da Conta: " + ContaB.getNumeroConta());
+        System.out.printf("\nTitular: " + ContaB.getTitular());
+        System.out.printf("\nSaldo: R$ " + ContaB.getSaldo());
+
+        ContaB.depositar(300);
+        ContaB.imprimirSaldoAtual();
     }
 }
