@@ -1,6 +1,6 @@
-package exercicio3oo.testes;
+package exercicio4oo.testes;
 
-import exercicio3oo.classes.Aluno;
+import exercicio4oo.classes.Aluno;
 
 public class TesteAluno {
     public static void main(String[] args) {
@@ -12,6 +12,9 @@ public class TesteAluno {
         Eduardo.setNota2(8);
         Eduardo.setNota3(7);
         Eduardo.setNota4(6);
+
+        System.out.println("Média: " +
+                Eduardo.calcularMedia());
 
         System.out.printf("--- Dados do Aluno ---");
         System.out.printf("Matrícula: " + Eduardo.getMatricula());

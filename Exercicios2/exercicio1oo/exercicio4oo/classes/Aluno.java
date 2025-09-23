@@ -1,10 +1,26 @@
-package exercicio3oo.classes;
+package exercicio4oo.classes;
 
 public class Aluno {
     private String matricula;
     private String nome;
     private int idade;
     private int nota1, nota2, nota3, nota4;
+
+    //Função para calcular a média do aluno
+    public double calcularMedia() {
+        double media = (nota1 + nota2 + nota3 + nota4) / 4.0;
+        return media;
+    }
+
+    public void imprimirSituacao() {
+        double media = this.calcularMedia();
+
+        if (media >= 7) {
+            System.out.println(nome + " Aprovado! ");
+        } else {
+            System.out.println(nome + " Reprovado!");;
+        }
+    }
 
     public String getMatricula(){ return this.matricula;}
     public void  setMatricula(String matricula){

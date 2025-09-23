@@ -1,4 +1,4 @@
-package exercicio3oo.classes;
+package exercicio4oo.classes;
 
 public class Retangulo {
     private double largura;

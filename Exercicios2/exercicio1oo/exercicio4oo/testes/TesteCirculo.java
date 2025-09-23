@@ -1,6 +1,6 @@
-package exercicio3oo.testes;
+package exercicio4oo.testes;
 
-import exercicio3oo.classes.Circulo;
+import exercicio4oo.classes.Circulo;
 
 public class TesteCirculo {
     public static void main(String[] args) {
